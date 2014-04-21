@@ -1,7 +1,7 @@
 class CardsController < ApplicationController
 
   def search
-    @cards = Card.search(params[:q])
+    @cards = Card.all
 
     respond_to do |format|
       format.json { render json: @cards.to_json }

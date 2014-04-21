@@ -31,12 +31,7 @@ gem 'rmagick'
 # for interacting with mtg api
 gem 'httparty'
 
-# for indexing card names for autocomplete
-gem 'elasticsearch-rails'
-gem 'elasticsearch-ruby'
-
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'foreman'
 end
