@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 Ttsmagic.addInitializer ->
-  Backbone.History.Start()
+  Ttsmagic.headerRegion.show(new Ttsmagic.Views.Header)
