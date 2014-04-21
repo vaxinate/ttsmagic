@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
+gem 'json2-rails'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'twitter-typeahead-rails'

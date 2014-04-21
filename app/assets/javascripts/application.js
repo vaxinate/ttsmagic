@@ -16,7 +16,7 @@
 //= require backbone
 //= require backbone.marionette
 //= require bootstrap
-//= require twitter-typeahead
+//= require twitter/typeahead
 //= require underscore
 //= require backbone
 //= require ttsmagic
