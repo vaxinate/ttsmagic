@@ -1,6 +1,6 @@
-class Ttsmagic.Views.Header extends Backbone.View
+class Ttsmagic.HeaderView extends Backbone.View
+  el: '#header'
   initialize: ->
-    console.log 'hi i am the header!'
     cards = new Bloodhound
       datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name')
       queryTokenizer: Bloodhound.tokenizers.whitespace
@@ -13,3 +13,6 @@ class Ttsmagic.Views.Header extends Backbone.View
       name: 'cards'
       displayKey: 'name'
       source: cards.ttAdapter()
+
+  events:
+    'typeahead:select #new-todo': 'onTypeaheadSelect'

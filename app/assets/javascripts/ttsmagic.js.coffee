@@ -1,12 +1,7 @@
 window.Ttsmagic = new Backbone.Marionette.Application()
 
-$(document).ready ->
-  Ttsmagic.addInitializer ->
-    Backbone.History.Start()
-    @addRegions(
-      header: '#header'
-      main: '#main'
-      footer: '#footer'
-    )
+window.Ttsmagic.addInitializer ->
+  Backbone.history.start()
 
+$(document).ready ->
   Ttsmagic.start()

@@ -13,12 +13,11 @@
 //= require json2
 //= require jquery
 //= require jquery_ujs
+//= require underscore
 //= require backbone
 //= require backbone.marionette
 //= require bootstrap
 //= require twitter/typeahead
-//= require underscore
-//= require backbone
 //= require ttsmagic
 //= require_tree ../templates
 //= require_tree ./models

@@ -1,11 +1,9 @@
 class CardsController < ApplicationController
+  respond_to :json
 
-  def search
+  def index
     @cards = Card.all
-
-    respond_to do |format|
-      format.json { render json: @cards.to_json }
-    end
+    respond_with(@cards)
   end
 
 end
