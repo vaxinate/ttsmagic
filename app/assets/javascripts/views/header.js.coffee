@@ -15,4 +15,8 @@ class Ttsmagic.HeaderView extends Backbone.View
       source: cards.ttAdapter()
 
   events:
-    'typeahead:select #new-todo': 'onTypeaheadSelect'
+    'typeahead:selected #new-todo': 'onTypeaheadSelect'
+
+  onTypeaheadSelect: (ev, suggestion, datasetName) ->
+    Ttsmagic.vent.trigger 'card:selected', suggestion
+    $(ev.currentTarget).val('')
