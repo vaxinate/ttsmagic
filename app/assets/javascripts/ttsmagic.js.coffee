@@ -6,8 +6,6 @@ window.Ttsmagic.addInitializer ->
   )
 
   Backbone.history.start()
-  @deck = new Ttsmagic.DeckCollection()
-  @mainRegion.show(new Ttsmagic.DeckView collection: @deck)
 
 $(document).ready ->
   Ttsmagic.start()

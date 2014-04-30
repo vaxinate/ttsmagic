@@ -4,3 +4,4 @@
 
 Ttsmagic.addInitializer ->
   new Ttsmagic.HeaderView()
+  @deck = new Ttsmagic.DeckCollection()
