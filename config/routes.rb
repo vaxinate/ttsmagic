@@ -5,6 +5,7 @@ Ttsmagic::Application.routes.draw do
   root 'home#index'
 
   resources :cards
+  resources :decks
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
