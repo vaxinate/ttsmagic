@@ -242,7 +242,7 @@ label[for='toggle-all'] {
   position: relative;
 }
 
-#todo-list li label {
+#todo-list li .name {
   white-space: pre;
   word-break: break-word;
   padding: 15px 60px 15px 15px;
