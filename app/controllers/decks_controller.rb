@@ -21,6 +21,8 @@ class DecksController < ApplicationController
     end
 
     deck_md5 = Digest::MD5.hexdigest(params[:card_ids].sort.join)
-    tts_image.write Rails.root.to_s + "/tmp/decks/#{deck_md5}.jpg"
+    tts_image.write Rails.root.to_s + "/public/decks/#{deck_md5}.jpg"
+
+    redirect_to "/decks/#{deck_md5}.jpg"
   end
 end
