@@ -28,7 +28,7 @@ gem 'marionette-rails'
 gem 'jbuilder', '~> 1.2'
 
 # rmagick for processing images
-gem 'rmagick'
+gem 'rmagick', :require => 'RMagick'
 
 # for interacting with mtg api
 gem 'httparty'
